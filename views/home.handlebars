@@ -1,2 +1,34 @@
-<h1>Home of the Handlebars</h1>
-<p>{{ stuff }}</p>
+
+<br><br>
+<h2></h2>
+<br>
+
+<br/><br/>
+
+
+
+<div class="jumbotron">
+  <h2 class="display-4">{{ info.companyName }} ({{ info.symbol }})</h2>
+  <hr class="my-4"><br>
+  <p class="lead">
+  	<strong>Latest Price: </strong>${{ info.latestPrice }}<br>
+	<strong>Previous Close: </strong>${{ info.previousClose }}<br>
+	<strong>Percent Change: </strong>{{ info.changePercent }}%<br>
+	<strong>Market Cap: </strong>${{ info.marketCap }}<br>
+	<strong>YTD Change: </strong>{{ info.ytdChange }}%<br>
+	<strong>52wk High: </strong>${{ info.week52High }}<br>
+	<strong>52wk Low: </strong>${{ info.week52Low }}<br><br><br>
+	Primary Exhange:    <strong>{{ info.primaryExchange }}</strong><br>
+  </p>
+  
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+
+
+
+<!--
+{{#each info}}
+	{{@key}} | {{this}}<br/>
+{{/each}}
+-->
